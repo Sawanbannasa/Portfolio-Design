@@ -1,3 +1,18 @@
+:root {
+  --background-color: #111;
+  --surface-color: #181818;
+  --primary-color: #1e90ff;
+  --accent-color: #ffb300;
+  --text-color: #f5f5f5;
+  --secondary-text-color: #b0b0b0;
+  --border-color: #222;
+  --button-bg: #222;
+  --button-hover-bg: #333;
+  --button-text: #fff;
+  --nav-bg: #181818;
+  --nav-text: #f5f5f5;
+  --logo-color: #fff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +22,8 @@ html, body{
     height: 100%;
     width: 100%;
     font-family: 'Gilroy', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
 }
 nav{
     height: 10vh;
@@ -15,6 +32,8 @@ nav{
     align-items: center;
     justify-content: flex-end;
     padding: 2vh 6vh;
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
 }
 nav h2{
     font-size: 2vh;
@@ -39,6 +58,7 @@ nav h2{
     align-items: center;
     justify-content: space-between;
     padding: 2vh 0vh;
+    color: var(--secondary-text-color);
 }
 #pfp{
     height: 90dvh;
@@ -57,16 +77,17 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 2px solid white;
 }
 #about p{
-    width: 60%;
+    width: 80%;
     font-size: 5.5vh;
     font-weight: 800;
 }
 #aboutpart2{
     width: 40%;
     height: 30dvh;
-    border-left: 2px solid black;
+    border-left: 2px solid white;
     font-size: 4vh;
     font-weight: 800;
     display: flex;
@@ -78,6 +99,41 @@ img{
 #scm{
     font-size: 4vh;
     font-weight: 800;
-    background-color: black;
-    color: white;
+    color: var(--button-text);
+}
+#work{
+    margin-top: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55dvh;
+    width: 100%;
+    padding: 3vh 8vh;
+}
+.part1{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 5vh;
+    border-bottom: 2px solid white;
+}
+.part2{
+    display: flex;
+    width: 65%;
+    height: 95%;
+    border-left: 2px solid white;
+    padding: 4vh 3vh;
+}
+.digital{
+    width: 100%;
+    height: 60%;
+    border-bottom: 2px solid white;
+
+}
+.digital p{
+    width: 80%;
+    font-size: 1vh;
+
 }
